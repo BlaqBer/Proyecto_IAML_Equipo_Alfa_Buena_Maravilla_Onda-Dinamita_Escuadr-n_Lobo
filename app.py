@@ -9,7 +9,7 @@ from motor_financiero import cargar_artefactos, evaluar_cartera, obtener_resumen
 # Configuracion general de la pagina web
 st.set_page_config(
     page_title="Deep Retention | Sistema Bancario",
-    page_icon="🏦",
+    page_icon="💰",
     layout="wide"
 )
 
