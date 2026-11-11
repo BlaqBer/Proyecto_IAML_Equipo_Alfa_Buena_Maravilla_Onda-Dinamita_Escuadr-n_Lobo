@@ -1,0 +1,96 @@
+/* ===== Deep Retention: estilo corporativo ===== */
+/* Solo cambia la apariencia: ningun texto, dato ni grafico se modifica desde aqui. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --navy: #0F1E36;
+    --navy-2: #1A2C4D;
+    --azure: #2F6FED;
+    --cyan: #00B8D9;
+    --magenta: #D6249F;
+    --green: #1FA971;
+    --slate: #6B7A90;
+    --line: #E6ECF5;
+    --soft: #F4F7FB;
+    --shadow: 0 2px 12px rgba(15, 30, 54, 0.07);
+    --shadow-hover: 0 8px 24px rgba(15, 30, 54, 0.12);
+}
+
+.stApp { font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif; }
+.block-container { padding-top: 2.4rem; padding-bottom: 3rem; max-width: 1500px; }
+header[data-testid="stHeader"] { background: transparent; }
+
+h2, h3, h4 { color: var(--navy); letter-spacing: -0.01em; }
+h3 { font-weight: 700; }
+
+/* ----- Cabecera tipo hero (mismo titulo y directriz de siempre) ----- */
+.st-key-hero {
+    background: linear-gradient(135deg, #0F1E36 0%, #183463 55%, #2F6FED 150%);
+    border-radius: 18px; padding: 28px 34px 18px 34px; margin-bottom: 18px;
+    box-shadow: 0 10px 30px rgba(15, 30, 54, 0.22); position: relative; overflow: hidden;
+}
+.st-key-hero::after {
+    content: ""; position: absolute; right: -60px; top: -60px; width: 220px; height: 220px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 184, 217, 0.35), rgba(0, 184, 217, 0) 70%);
+}
+.st-key-hero h1 { color: #FFFFFF; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; padding-bottom: 0.4rem; }
+.st-key-hero p { color: #D5E0F2; font-size: 0.98rem; line-height: 1.6; }
+.st-key-hero strong { color: #FFFFFF; }
+
+/* ----- Pestañas en forma de pildora ----- */
+div[role="tablist"] { gap: 8px; border-bottom: none; padding-bottom: 6px; }
+.react-aria-SelectionIndicator { display: none; }
+div[data-testid="stTab"] {
+    background: var(--soft); border: 1px solid var(--line); border-radius: 999px; padding: 8px 18px; height: auto;
+    transition: all 0.15s ease; cursor: pointer;
+}
+div[data-testid="stTab"] p { font-weight: 600; font-size: 0.9rem; color: var(--slate); }
+div[data-testid="stTab"]:hover { border-color: var(--azure); }
+div[data-testid="stTab"][aria-selected="true"] { background: var(--azure); border-color: var(--azure); box-shadow: 0 4px 12px rgba(47, 111, 237, 0.35); }
+div[data-testid="stTab"][aria-selected="true"] p { color: #FFFFFF; }
+
+/* ----- Tarjetas KPI con franja de color ----- */
+div[data-testid="stMetric"] {
+    background: #FFFFFF; border: 1px solid var(--line); border-top: 4px solid var(--slate); border-radius: 14px;
+    padding: 16px 20px; box-shadow: var(--shadow); min-height: 118px; transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+div[data-testid="stMetric"]:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+div[data-testid="stMetricLabel"] p { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--slate); font-weight: 600; }
+div[data-testid="stMetricValue"] { font-size: 1.8rem; font-weight: 700; color: var(--navy); }
+
+.st-key-kpi-1 div[data-testid="stMetric"] { border-top-color: var(--slate); }
+.st-key-kpi-2 div[data-testid="stMetric"] { border-top-color: var(--magenta); }
+.st-key-kpi-3 div[data-testid="stMetric"] { border-top-color: var(--azure); }
+.st-key-kpi-4 div[data-testid="stMetric"] { border-top-color: var(--cyan); }
+.st-key-kpi-5 div[data-testid="stMetric"] { border-top-color: var(--azure); }
+.st-key-kpi-6 div[data-testid="stMetric"] { border-top-color: var(--green); }
+
+/* ----- Tarjetas contenedoras de graficos y tablas ----- */
+.st-key-card-seg, .st-key-card-bal, .st-key-card-tabla, .st-key-card-dispersion {
+    background: #FFFFFF; border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); padding: 14px 16px;
+}
+div[data-testid="stDataFrame"] { border-radius: 10px; overflow: hidden; }
+
+/* Alertas, imagenes y avisos */
+div[data-testid="stAlert"] { border-radius: 12px; border: 1px solid var(--line); }
+div[data-testid="stImage"] img { border-radius: 12px; box-shadow: var(--shadow); }
+
+/* ----- Barra lateral ----- */
+section[data-testid="stSidebar"] { border-right: none; }
+section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 { color: #FFFFFF; }
+
+.dr-brand { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px; }
+.dr-brand-left { display: flex; align-items: center; gap: 10px; }
+.dr-logo {
+    width: 38px; height: 38px; border-radius: 11px; display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, var(--cyan), var(--azure));
+}
+.dr-brand-name { color: #FFFFFF; font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; }
+.dr-avatar {
+    width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    background: var(--navy-2); border: 2px solid rgba(255, 255, 255, 0.25);
+}
+.dr-role { color: #8FA3C4; font-size: 0.78rem; margin: 0 0 12px 48px; padding-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
+
+/* ----- Pie de pagina ----- */
+.dr-footer { text-align: center; color: var(--slate); font-size: 0.8rem; margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--line); }

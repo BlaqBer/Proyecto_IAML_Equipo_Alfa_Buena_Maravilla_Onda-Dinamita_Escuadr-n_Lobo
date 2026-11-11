@@ -1,9 +1,11 @@
-pandas
-numpy
-scikit-learn
-tensorflow
-shap
-matplotlib
-plotly
-streamlit
-joblib
+# Probado con Python 3.12 (64 bits). TensorFlow puede fallar con versiones de Python mas nuevas.
+pandas==3.1.1
+numpy==2.5.4
+scikit-learn==1.9.1
+tensorflow==2.21.0
+keras==3.15.1
+shap==0.54.1
+matplotlib==3.11.2
+plotly==7.1.0
+streamlit==1.67.0
+joblib==1.6.0
