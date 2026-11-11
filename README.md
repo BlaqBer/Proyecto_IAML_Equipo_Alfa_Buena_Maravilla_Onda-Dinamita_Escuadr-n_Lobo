@@ -4,7 +4,7 @@ Proyecto de Inteligencia Artificial (UCAB) · Equipo Alfa Buena Maravilla Onda-D
 
 Motor predictivo basado en una **red neuronal** que estima la probabilidad de fuga de cada cliente bancario y decide, con una regla de rentabilidad neta, **a quién conviene retener y a quién no**. Se entrega con una aplicación interactiva en Streamlit para ejecutivos de cuentas y directivos.
 
-> **Informe ejecutivo:** [Ver el informe en Google Drive](https://drive.google.com/file/d/15lXJNKhdiMQij0fYdmiKTEO12ynqCBsA/view?usp=sharing)
+> **Informe ejecutivo:** [Ver el informe en Google Drive](https://drive.google.com/file/d/1ReqhfvKDMq1c_oKL4CvV6PzmXgBF9TX4/view?usp=sharing)
 
 ## Qué hace
 
