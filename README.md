@@ -30,7 +30,7 @@ Motor predictivo basado en una **red neuronal** que estima la probabilidad de fu
 
 Cuatro pestañas y un simulador de parámetros en la barra lateral:
 
-- **Panel de Cartera:** seis indicadores consolidados (clientes analizados, capital en riesgo crítico, saldo a intervenir, rescate esperado, inversión, ganancia neta y ROI), distribución de clientes y balance por segmento, y matriz de decisión comercial.
+- **Panel de Cartera:** seis indicadores consolidados (clientes analizados, capital en riesgo crítico, saldo a intervenir, rescate esperado, inversión y ganancia neta con su ROI), distribución de clientes y balance por segmento, y matriz de decisión comercial.
 - **Buscador y Evaluador de Clientes:** consulta de un cliente existente (por ID o apellido) o evaluación de un cliente nuevo ingresando sus datos.
 - **Análisis del Simulador Financiero:** mapa de decisión (probabilidad vs. balance) que se actualiza con los parámetros.
 - **Datos para el Informe Ejecutivo:** cifras, métricas y gráfica SHAP listas para el informe.
@@ -86,7 +86,6 @@ El repositorio ya incluye el modelo entrenado y todos los artefactos, por lo que
 | `metricas_tecnicas.joblib`, `shap_summary.png` | Métricas del modelo y gráfica SHAP |
 | `Customer-Churn-Records.csv` | Datos |
 | `requirements.txt` | Dependencias con versiones fijas |
-| `docs/Informe_Ejecutivo_Deep_Retention.pdf` | Informe ejecutivo |
 
 ## Reproducir el entrenamiento (opcional)
 
